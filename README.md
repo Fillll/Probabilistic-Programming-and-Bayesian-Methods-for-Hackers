@@ -2,12 +2,10 @@
 #### *Using Python and PyMC*
 
 
-
-
 The Bayesian method is the natural approach to inference, yet it is hidden from readers behind chapters of slow, mathematical analysis. The typical text on Bayesian inference involves two to three chapters on probability theory, then enters what Bayesian inference is. Unfortunately, due to mathematical intractability of most Bayesian models, the reader is only shown simple, artificial examples. This can leave the user with a *so-what* feeling about Bayesian inference. In fact, this was the author's own prior opinion.
 
 
-<div style="float: right; margin-left: 30px;"><img title="created by Stef Gibson at StefGibson.com"style="float: right;margin-left: 30px;" src="http://i.imgur.com/6DKYbPb.png?1" align=right height = 350 /></div>
+<div style="float: right; margin-left: 30px;"><img title="created by Stef Gibson"style="float: right;margin-left: 30px;" src="http://i.imgur.com/6DKYbPb.png?1" align=right height = 350 /></div>
 
 After some recent success of Bayesian methods in machine-learning competitions, I decided to investigate the subject again. Even with my mathematical background, it took me three straight-days of reading examples and trying to put the pieces together to understand the methods. There was simply not enough literature bridging theory to practice. The problem with my misunderstanding was the disconnect between Bayesian mathematics and probabilistic programming. That being said, I suffered then so the reader would not have to now. This book attempts to bridge the gap.
 
@@ -20,6 +18,16 @@ The choice of PyMC as the probabilistic programming language is two-fold. As of 
 PyMC does have dependencies to run, namely NumPy and (optionally) SciPy. To not limit the user, the examples in this book will rely only on PyMC, NumPy, SciPy and Matplotlib only.
 
 
+Printed Version by Addison-Wesley
+------
+<div style="float: right; margin-left: 30px;"><img title="created by Stef Gibson"style="float: right;margin-left: 30px;" src="http://www-fp.pearsonhighered.com/assets/hip/images/bigcovers/0133902838.jpg" align=right height = 200 /></div>
+
+**Bayesian Methods for Hackers is now available as a printed book!** You can pick up a copy on [Amazon](http://www.amazon.com/Bayesian-Methods-Hackers-Probabilistic-Addison-Wesley/dp/0133902838). What are the differences between the online version and the printed version?
+
+ - Additional Chapter on Bayesian A/B testing
+ - Updated examples
+ - Answers to the end of chapter questions
+ - Additional explaination, and rewritten sections to aid the reader. 
 
 
 Contents
@@ -32,48 +40,78 @@ The below chapters are rendered via the *nbviewer* at
 [nbviewer.ipython.org/](http://nbviewer.ipython.org/), and is read-only and rendered in real-time.
 Interactive notebooks + examples can be downloaded by cloning! 
 
+### PyMC2
 
 * [**Prologue:**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Prologue/Prologue.ipynb) Why we do it.
 
-* [**Chapter 1: Introduction to Bayesian Methods**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter1_Introduction/Chapter1.ipynb)
+* [**Chapter 1: Introduction to Bayesian Methods**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter1_Introduction/Ch1_Introduction_PyMC2.ipynb)
     Introduction to the philosophy and practice of Bayesian methods and answering the question, "What is probabilistic programming?" Examples include:
     - Inferring human behaviour changes from text message rates
     
-* [**Chapter 2: A little more on PyMC**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter2_MorePyMC/Chapter2.ipynb)
+* [**Chapter 2: A little more on PyMC**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter2_MorePyMC/Ch2_MorePyMC_PyMC2.ipynb)
     We explore modeling Bayesian problems using Python's PyMC library through examples. How do we create Bayesian models? Examples include:
     - Detecting the frequency of cheating students, while avoiding liars
     - Calculating probabilities of the Challenger space-shuttle disaster
     
-* [**Chapter 3: Opening the Black Box of MCMC**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter3_MCMC/Chapter3.ipynb)
+* [**Chapter 3: Opening the Black Box of MCMC**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter3_MCMC/Ch3_IntroMCMC_PyMC2.ipynb)
     We discuss how MCMC operates and diagnostic tools. Examples include:
     - Bayesian clustering with mixture models
     
-* [**Chapter 4: The Greatest Theorem Never Told**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter4_TheGreatestTheoremNeverTold/Chapter4.ipynb)
+* [**Chapter 4: The Greatest Theorem Never Told**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter4_TheGreatestTheoremNeverTold/Ch4_LawOfLargeNumbers_PyMC2.ipynb)
     We explore an incredibly useful, and dangerous, theorem: The Law of Large Numbers. Examples include:
     - Exploring a Kaggle dataset and the pitfalls of naive analysis
     - How to sort Reddit comments from best to worst (not as easy as you think)
     
-* [**Chapter 5: Would you rather lose an arm or a leg?**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter5_LossFunctions/Chapter5.ipynb)
+* [**Chapter 5: Would you rather lose an arm or a leg?**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter5_LossFunctions/Ch5_LossFunctions_PyMC2.ipynb)
     The introduction of loss functions and their (awesome) use in Bayesian methods.  Examples include:
     - Solving the *Price is Right*'s Showdown
     - Optimizing financial predictions
     - Winning solution to the Kaggle Dark World's competition
     
-* [**Chapter 6: Getting our *prior*-ities straight**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter6_Priorities/Chapter6.ipynb)
+* [**Chapter 6: Getting our *prior*-ities straight**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter6_Priorities/Ch6_Priors_PyMC2.ipynb)
     Probably the most important chapter. We draw on expert opinions to answer questions. Examples include:
     - Multi-Armed Bandits and the Bayesian Bandit solution.
     - What is the relationship between data sample size and prior?
     - Estimating financial unknowns using expert priors
     
     We explore useful tips to be objective in analysis as well as common pitfalls of priors. 
-       
-* **Chapter X1: Bayesian methods in Machine Learning and Model Validation** 
-    We explore how to resolve the overfitting problem plus popular ML methods. Also included are probablistic explainations of ridge regression and LASSO regression.
-    - Tim Saliman's winning solution to Kaggle's *Don't Overfit* problem 
+
+### PyMC3
+
+* [**Prologue:**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Prologue/Prologue.ipynb) Why we do it.
+
+* [**Chapter 1: Introduction to Bayesian Methods**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter1_Introduction/Ch1_Introduction_PyMC3.ipynb)
+    Introduction to the philosophy and practice of Bayesian methods and answering the question, "What is probabilistic programming?" Examples include:
+    - Inferring human behaviour changes from text message rates
     
-* **Chapter X2: More PyMC Hackery**
-    We explore the gritty details of PyMC. Examples include:
-    -  Analysis on real-time GitHub repo stars and forks.
+* [**Chapter 2: A little more on PyMC**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter2_MorePyMC/Ch2_MorePyMC_PyMC3.ipynb)
+    We explore modeling Bayesian problems using Python's PyMC library through examples. How do we create Bayesian models? Examples include:
+    - Detecting the frequency of cheating students, while avoiding liars
+    - Calculating probabilities of the Challenger space-shuttle disaster
+    
+* [**Chapter 3: Opening the Black Box of MCMC**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter3_MCMC/Ch3_IntroMCMC_PyMC3.ipynb)
+    We discuss how MCMC operates and diagnostic tools. Examples include:
+    - Bayesian clustering with mixture models
+    
+* [**Chapter 4: The Greatest Theorem Never Told**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter4_TheGreatestTheoremNeverTold/Ch4_LawOfLargeNumbers_PyMC3.ipynb)
+    We explore an incredibly useful, and dangerous, theorem: The Law of Large Numbers. Examples include:
+    - Exploring a Kaggle dataset and the pitfalls of naive analysis
+    - How to sort Reddit comments from best to worst (not as easy as you think)
+    
+* [**Chapter 5: Would you rather lose an arm or a leg?**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter5_LossFunctions/Ch5_LossFunctions_PyMC3.ipynb)
+    The introduction of loss functions and their (awesome) use in Bayesian methods.  Examples include:
+    - Solving the *Price is Right*'s Showdown
+    - Optimizing financial predictions
+    - Winning solution to the Kaggle Dark World's competition
+    
+* [**Chapter 6: Getting our *prior*-ities straight**](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter6_Priorities/Ch6_Priors_PyMC3.ipynb)
+    Probably the most important chapter. We draw on expert opinions to answer questions. Examples include:
+    - Multi-Armed Bandits and the Bayesian Bandit solution.
+    - What is the relationship between data sample size and prior?
+    - Estimating financial unknowns using expert priors
+    
+    We explore useful tips to be objective in analysis as well as common pitfalls of priors. 
+
 
 
     
@@ -89,10 +127,10 @@ The book can be read in three different ways, starting from most recommended to 
 1. The most recommended option is to clone the repository to download the .ipynb files to your local machine. If you have IPython installed, you can view the 
 chapters in your browser *plus* edit and run the code provided (and try some practice questions). This is the preferred option to read
 this book, though it comes with some dependencies. 
-    -  IPython v0.13 (or greater) is a requirement to view the ipynb files. It can be downloaded [here](http://ipython.org/). IPython notebooks can be run by `(your-virtualenv) ~/path/to/the/book/Chapter1_Introduction $ ipython notebook`
+    -  IPython v2.0 (or greater) is a requirement to view the ipynb files. It can be downloaded [here](http://ipython.org/). IPython notebooks can be run by `(your-virtualenv) ~/path/to/the/book/Chapter1_Introduction $ ipython notebook`
     -  For Linux users, you should not have a problem installing NumPy, SciPy, Matplotlib and PyMC. For Windows users, check out [pre-compiled versions](http://www.lfd.uci.edu/~gohlke/pythonlibs/) if you have difficulty. 
     -  In the styles/ directory are a number of files (.matplotlirc) that used to make things pretty. These are not only designed for the book, but they offer many improvements over the default settings of matplotlib.
-2. The second, preferred, option is to use the nbviewer.ipython.org site, which display IPython notebooks in the browser ([example](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter1_Introduction/Chapter1_Introduction.ipynb)).
+2. The second, preferred, option is to use the nbviewer.ipython.org site, which display IPython notebooks in the browser ([example](http://nbviewer.ipython.org/urls/raw.github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter1_Introduction/Chapter1.ipynb)).
 The contents are updated synchronously as commits are made to the book. You can use the Contents section above to link to the chapters.
  
 3. PDFs are the least-prefered method to read the book, as pdf's are static and non-interactive. If PDFs are desired, they can be created dynamically using the [nbconvert](https://github.com/ipython/nbconvert) utility.
@@ -104,8 +142,8 @@ Installation and configuration
 
 If you would like to run the IPython notebooks locally, (option 1. above), you'll need to install the following:
 
--  IPython 0.13+ is a requirement to view the ipynb files. It can be downloaded [here](http://ipython.org/ipython-doc/dev/install/index.html) 
-- Necessary packages are PyMC 2.2, NumPy, SciPy and Matplotlib.   
+-  IPython 2.0+ is a requirement to view the ipynb files. It can be downloaded [here](http://ipython.org/ipython-doc/dev/install/index.html) 
+- Necessary packages are PyMC, NumPy, SciPy and Matplotlib.   
    -  For Linux/OSX users, you should not have a problem installing the above, [*except for Matplotlib on OSX*](http://www.penandpants.com/2012/02/24/install-python/).
    -  For Windows users, check out [pre-compiled versions](http://www.lfd.uci.edu/~gohlke/pythonlibs/) if you have difficulty. 
    - also recommended, for data-mining exercises, are [PRAW](https://github.com/praw-dev/praw) and [requests](https://github.com/kennethreitz/requests). 
